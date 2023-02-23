@@ -14,5 +14,5 @@ echo "test"
 while [[ ${iterator} -le 5 ]]
 do
 	echo "${iterator}"
-	(($iterator++))
+	((iterator++))
 done
