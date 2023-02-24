@@ -16,7 +16,7 @@ while read -r line; do
 done < usergreetings.txt
 #
 declare -s ucity
-ucity="Leipzig"
+read ucity
 #  Initialize iterator and start to test for each City in the USERlocations-Array
 declare -i i
 i=0
@@ -30,8 +30,6 @@ do
 	else
 		# show for each try
 		echo "no-match for location $i"
-		((iterator++))
+		((i++))
 	fi
 done
-echo -e
-date | echo
